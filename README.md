@@ -1,14 +1,22 @@
 # REJAFADA
 (Retrieval of Jar Files Applied to Dynamic Analysis)
 
-    Pinheiro, R.P., Lima, S.M.L., Souza, D.M. et al. 
-    Antivirus applied to JAR malware detection based on runtime behaviors. 
-    Scientific Reports - Nature 12, 1945 (2022). 
-    https://doi.org/10.1038/s41598-022-05921-5
+```
+Pinheiro, R.P., Lima, S.M.L., Souza, D.M. et al. 
+Antivirus applied to JAR malware detection based on runtime behaviors. 
+Scientific Reports - Nature Research 12, 1945 (2022). 
+https://doi.org/10.1038/s41598-022-05921-5
+```
     
 ## How to use our dataset in Matlab
 
 [TrainingTime, TestingTime, TrainingAccuracy, TestingAccuracy] = ['MLP'](https://github.com/refade/Artificial-intelligence-based-antivirus-in-order-to-detect-malware-preventively/blob/main/MLP.m)(['Antivirus_Dataset_Jar.mat'](https://github.com/rewema/REJAFADA/blob/master/Antivirus_Dataset_Jar.mat), 1, 500, 'traincgb', 0)
+
+## How to use our dataset in Python with ELM (Extreme Learning Machine)
+
+python [melm.py](https://github.com/DejavuForensics/mELM/melm.py) -tall [Antivirus_Dataset_Jar_mELM_format.csv](https://github.com/DejavuForensics/REJAFADA/blob/master/Antivirus_Dataset_Jar_mELM_format.zip) 
+-ty 1 -nh 500 -af dilation -v
+
 
 ## Limitation of Commercial Antivirus
 
