@@ -13,9 +13,10 @@ https://doi.org/10.1038/s41598-022-05921-5
 [TrainingTime, TestingTime, TrainingAccuracy, TestingAccuracy] = ['MLP'](https://github.com/refade/Artificial-intelligence-based-antivirus-in-order-to-detect-malware-preventively/blob/main/MLP.m)(['Antivirus_Dataset_Jar.mat'](https://github.com/rewema/REJAFADA/blob/master/Antivirus_Dataset_Jar.mat), 1, 500, 'traincgb', 0)
 
 ## How to use our dataset in Python with ELM (Extreme Learning Machine)
+The database is compressed due to the individual file size delimited by github. Download the compressed file (.zip) to your computer and decompress it before running the extreme neural networks.
 
 python [melm.py](https://github.com/DejavuForensics/mELM/melm.py) -tall [Antivirus_Dataset_Jar_mELM_format.csv](https://github.com/DejavuForensics/REJAFADA/blob/master/Antivirus_Dataset_Jar_mELM_format.zip) 
--ty 1 -nh 500 -af dilation -v
+-kfold 10 -virusNorm -ty 1 -nh 500 -af dilation -v
 
 
 ## Limitation of Commercial Antivirus
